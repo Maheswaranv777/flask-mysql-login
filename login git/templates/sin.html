@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url('C:\\Users\\Vengadesh\\Downloads\\yy.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+    
+            
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 500px;
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 200px;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 25px;
+
+        }
+        form h1{
+            color: white;
+            font-size: 2rem;
+        }
+        .box{
+            padding: 12px;
+            margin: 20px;
+            width: 65%;
+            border-radius: 20px;
+            background-color: rgba(0,0,0,0.5);
+            box-shadow: insert -3px  -3px rgba(0,0,0,0.5);
+            color: white;
+            font-size: 1rem;
+        }
+        .sin{
+            padding: 10px 20px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="/" method="post">
+        <h1>SIGN IN</h1>
+    
+
+        <input type="text" name="name" placeholder="Enter Username" class="box">
+        <input type="password" name="pcode" placeholder="Enter password" class="box" >
+        <input type="submit" value="sign" class="sin">
+        <a href=" {{url_for('log') }}" style="color: yellow;">already sign /<span style="color:white;">LOGIN </span> </a>       
+    </form>
+</body>
+</html>
